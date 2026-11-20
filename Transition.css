@@ -1,0 +1,28 @@
+.slide-in, .slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #2563eb;
+  z-index: 101;
+  pointer-events: none;
+}
+
+.slide-in {
+  transform-origin: top;
+}
+
+.slide-out {
+  transform-origin: bottom;
+}
+
+.transition-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 102;
+  pointer-events: none;
+}
